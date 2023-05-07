@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Auth.FormCadastro">
+
+    <TextView
+        android:id="@+id/title_cadastre_se"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="serif-monospace"
+        android:text="Cadastro"
+        android:textColor="@color/purple_700"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/containerComponents_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/containerComponents_cadastro"
+        style="@style/ContainerComponents"
+        android:layout_width="307dp"
+        android:layout_height="305dp"
+        android:layout_marginTop="230dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_cadastre_se"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_Nome"
+        style="@style/Edit_Text"
+        android:layout_marginTop="8dp"
+        android:background="@color/purple_200"
+        android:hint="Nome"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents_cadastro"
+        app:layout_constraintStart_toStartOf="@id/containerComponents_cadastro"
+        app:layout_constraintTop_toTopOf="@id/containerComponents_cadastro" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Edit_Text"
+        android:layout_marginTop="12dp"
+        android:hint="Email"
+        android:inputType="text"
+        android:background="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents_cadastro"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="@id/containerComponents_cadastro"
+        app:layout_constraintTop_toBottomOf="@id/edit_Nome" />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        style="@style/Edit_Text"
+        android:layout_marginTop="16dp"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:background="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents_cadastro"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="@id/containerComponents_cadastro"
+        app:layout_constraintTop_toBottomOf="@id/edit_email" />
+
+    <EditText
+        android:id="@+id/confirm_senha"
+        style="@style/Edit_Text"
+        android:hint="Confirme a senha"
+        android:inputType="textPassword"
+        android:background="@color/purple_200"
+        app:layout_constraintTop_toBottomOf="@id/edit_senha"
+        app:layout_constraintStart_toStartOf="@id/containerComponents_cadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents_cadastro"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBarCad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirm_senha"
+        android:visibility="invisible"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cadastrar"
+        style="@style/button"
+        android:text="Cadastrar"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressBarCad"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Já possui cadastro? Login."
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_cadastrar"
+        android:layout_marginTop="25dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
