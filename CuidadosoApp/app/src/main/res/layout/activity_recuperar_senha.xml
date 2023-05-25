@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Auth.RecuperarSenha">
+
+        <ImageView
+            android:id="@+id/logoRec"
+            android:layout_width="229dp"
+            android:layout_height="221dp"
+            android:layout_margin="40dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/cuidadoso_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/container"
+            style="@style/ContainerComponents"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logoRec"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/txt_rec_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/container"
+            app:layout_constraintEnd_toEndOf="@id/container"
+            app:layout_constraintTop_toTopOf="@id/container"
+            android:layout_marginTop="20dp"
+            android:text="Informe o seu email para recuperar a senha"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edit_rec_email"
+            style="@style/Edit_Text"
+            android:layout_marginTop="20dp"
+            android:hint="Email"
+            android:drawableRight="@drawable/ic_baseline_email_24"
+            app:layout_constraintEnd_toEndOf="@id/container"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/container"
+            app:layout_constraintTop_toBottomOf="@id/txt_rec_senha"
+            android:inputType="textEmailAddress"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_recover"
+            style="@style/button"
+            app:layout_constraintStart_toStartOf="@id/container"
+            app:layout_constraintEnd_toEndOf="@id/container"
+            app:layout_constraintTop_toBottomOf="@id/edit_rec_email"
+            android:text="Enviar"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

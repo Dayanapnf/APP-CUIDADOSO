@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "729936358852",
+    "project_id": "app-cuidadoso",
+    "storage_bucket": "app-cuidadoso.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729936358852:android:9ccbbb8afcae2779cf4891",
+        "android_client_info": {
+          "package_name": "com.example.cuidadosoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729936358852-bi4a6ttbfg88rbmptirfpn231u1p72lr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cuidadosoapp",
+            "certificate_hash": "708238272465f08d1e572db92f5baf2a74f18250"
+          }
+        },
+        {
+          "client_id": "729936358852-gd77pmm3n4hbf1gikv91gdj1b6309oa0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYFxvCYX3iat1LuvvYXiN3tDBD89Sr3Oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729936358852-gd77pmm3n4hbf1gikv91gdj1b6309oa0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
