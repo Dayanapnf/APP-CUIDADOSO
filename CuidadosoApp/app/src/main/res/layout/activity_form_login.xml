@@ -19,25 +19,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cuidadoso_login" />
 
-    <View
-        android:id="@+id/container"
-        style="@style/ContainerComponents"
-        android:layout_marginTop="20sp"
+    <TextView
+        android:id="@+id/text_entre_p_continuar"
+        style="@style/text_tela_cadastro"
+        android:text="Entre para continuar"
+        android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@id/imageView4" />
+
+
 
         <EditText
             android:id="@+id/edit_email"
             style="@style/Edit_Text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/custom_edit_text"
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:textColorHint="@color/white"
-            app:layout_constraintEnd_toEndOf="@id/container"
-            app:layout_constraintStart_toStartOf="@id/container"
-            app:layout_constraintTop_toTopOf="@id/container" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_entre_p_continuar" />
 
         <EditText
             android:id="@+id/edit_senha"
@@ -46,8 +49,8 @@
             android:hint="Senha"
             android:inputType="textPassword"
             android:textColorHint="@color/white"
-            app:layout_constraintEnd_toEndOf="@id/container"
-            app:layout_constraintStart_toStartOf="@id/container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edit_email" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -55,15 +58,15 @@
         style="@style/button"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/custom_bottons"
         android:text="Entrar"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@id/container"
-        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_senha" />
 
-        <ProgressBar
+    <ProgressBar
             android:id="@+id/progressBarLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,7 +74,7 @@
             android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/container" />
+            app:layout_constraintTop_toBottomOf="@id/button" />
 
         <TextView
             android:id="@+id/text_recuperar_senha"
