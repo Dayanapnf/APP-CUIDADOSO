@@ -27,7 +27,7 @@
         app:captionMargin="0dp"
         app:captionTextSize="14sp"
         app:carouselBackground="#00000000"
-        app:imagePlaceholder=""
+        app:imagePlaceholder="@drawable/cuidadoso_login"
         app:imageScaleType="fitXY"
         app:infiniteCarousel="true"
         app:showCaption="true"
