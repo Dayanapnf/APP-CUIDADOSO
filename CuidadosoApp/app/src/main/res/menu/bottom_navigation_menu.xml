@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_menu_inicio"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Início"
+
+        />
+    <item
+        android:id="@+id/bottom_menu_tarefas"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_list_alt_24"
+        android:title="Tarefas"
+
+        />
+    <item
+        android:id="@+id/bottom_menu_adicionar"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_add_circle_24"
+        android:title="Adicionar"
+
+        />
+    <item
+        android:id="@+id/bottom_menu_pet"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_calendar_month_24"
+        android:title="Calendário"
+
+        />
+
+    <item
+        android:id="@+id/bottom_menu_perfil"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Perfil"
+        />
+</menu>

@@ -68,7 +68,7 @@ class FormLogin : AppCompatActivity() {
        binding.textRecuperarSenha.setOnClickListener{
            val intent = Intent(this, RecuperarSenha::class.java)
            startActivity(intent)
-       } 
+       }
     }
 
     override fun onStart(){
