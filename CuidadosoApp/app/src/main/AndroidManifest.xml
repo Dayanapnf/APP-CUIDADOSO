@@ -44,10 +44,15 @@
         </activity>
         <activity
             android:name=".Auth.FormLogin"
-            android:exported="false"></activity>
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
         <activity
             android:name=".Auth.FormCadastro"
-            android:exported="false"></activity>
+            android:exported="false">
+            
+        </activity>
     </application>
 
 </manifest>
