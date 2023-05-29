@@ -29,11 +29,11 @@
         <item name="android:layout_marginLeft">60dp</item>
         <item name="android:layout_marginRight">60dp</item>
         <item name="android:padding">18dp</item>
-        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginTop">50dp</item>
         <item name="android:textColor">@color/purple_200</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:background">@color/purple_500</item>
+        <item name="android:background">@color/purple_300</item>
     </style>
 
     <style name="text_tela_cadastro">
@@ -42,7 +42,7 @@
         <item name="android:fontFamily">serif-monospace</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">25dp</item>
-        <item name="android:textColor">@color/purple_500</item>
-        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">@color/purple_300</item>
+        <item name="android:layout_marginBottom">10dp</item>
     </style>
 </resources>
