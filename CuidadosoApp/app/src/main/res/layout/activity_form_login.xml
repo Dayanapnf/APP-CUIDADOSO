@@ -22,6 +22,7 @@
     <View
         android:id="@+id/container"
         style="@style/ContainerComponents"
+        android:layout_marginTop="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
@@ -53,8 +54,8 @@
         android:id="@+id/button"
         style="@style/button"
 
-        android:layout_width="260dp"
-        android:layout_height="57dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
         android:background="@drawable/custom_bottons"
         android:text="Entrar"
