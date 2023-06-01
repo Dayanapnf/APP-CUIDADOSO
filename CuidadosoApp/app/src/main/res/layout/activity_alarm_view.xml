@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_400"
+    tools:context=".AlarmView">
+
+    <ImageView
+        android:id="@+id/alarmImageView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_comprimido"
+        app:layout_constraintBottom_toTopOf="@+id/medsTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/medsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        style="@style/text_forms"
+        android:text="ALARMEEEEEEEEEEEEEEEEEEEEEEEE"
+        app:layout_constraintBottom_toTopOf="@id/snoozePills"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alarmImageView" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/snoozePills"
+        style="@style/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:onClick="snoozePills"
+        app:layout_constraintBottom_toTopOf="@id/tookPills"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/custom_google"
+        android:text="Adiar em cinco minutos!"
+        android:textAllCaps="true"
+        android:textColor="@color/purple_300"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tookPills"
+        style="@style/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/custom_bottons"
+        android:text="Tomei o remédio!"
+        android:textAllCaps="true"
+        android:textColor="@color/white"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

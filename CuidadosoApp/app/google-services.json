@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "729936358852",
+    "firebase_url": "https://app-cuidadoso-default-rtdb.firebaseio.com",
     "project_id": "app-cuidadoso",
     "storage_bucket": "app-cuidadoso.appspot.com"
   },
@@ -14,15 +15,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "729936358852-bi4a6ttbfg88rbmptirfpn231u1p72lr.apps.googleusercontent.com",
+          "client_id": "729936358852-vcp9fsueij4s69sdqlj2q8cpplcajei2.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.cuidadosoapp",
-            "certificate_hash": "708238272465f08d1e572db92f5baf2a74f18250"
+            "certificate_hash": "3742a4c7dc6c6c33b4035cfeaa4d58531bdd4d76"
           }
         },
         {
-          "client_id": "729936358852-gd77pmm3n4hbf1gikv91gdj1b6309oa0.apps.googleusercontent.com",
+          "client_id": "729936358852-pau5oanu4cr0alfag3q6p4908lmmvgn2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],

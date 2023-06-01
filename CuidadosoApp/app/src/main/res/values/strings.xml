@@ -2,4 +2,27 @@
     <string name="app_name">CuidadosoApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="medicamento">Medicamento</string>
+    <string name="nome">Nome do medicamento</string>
+    <string name="alimentacao">Alimentação</string>
+    <string name="higiene">Higiene</string>
+    <string name="lazer">Lazer</string>
+    <string name="proximo">Próximo</string>
+    <string name="seis_vezes_no_dia_4h_4h">Seis vezes no dia (4h/4h)</string>
+    <string name="quatro_vezes_no_dia_6h_6h">Quatro vezes no dia (6h/6h)</string>
+    <string name="tr_s_vezes_no_dia_8h_8h">Três vezes no dia (8h/8h)</string>
+    <string name="duas_vezes_no_dia_12h_12h">Duas vezes no dia (12h/12h)</string>
+    <string name="uma_vez_por_dia_24h">Uma vez por dia (24h)</string>
+    <string name="dose_nica">Dose única</string>
+    <string name="med_notification_channel_id">med_notification</string>
+    <string name="notification_title">Hora do remédio!</string>
+    <string name="med_notification_channel_name">Lembretes de medicação</string>
+    <string-array name="lazer">
+        <item>Caminhar</item>
+        <item>Correr</item>
+        <item>Ler</item>
+        <item>Jogar</item>
+        <item>Ouvir Música</item>
+
+    </string-array>
 </resources>
