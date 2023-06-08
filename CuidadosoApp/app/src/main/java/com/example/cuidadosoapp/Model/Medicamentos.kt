@@ -8,37 +8,32 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.cuidadoapp.util.setAlarm
+import androidx.recyclerview.widget.RecyclerView
 import com.example.cuidadosoapp.R
-import com.example.cuidadosoapp.util.cleanEmail
+import com.example.cuidadosoapp.databinding.FragmentCalendarioBinding
+import com.example.cuidadosoapp.databinding.FragmentHomeBinding
 import com.example.cuidadosoapp.util.getUserDBRef
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.FirebaseDatabase
 import java.util.*
+import kotlin.collections.ArrayList
 
-class Medicamentos(  ) {
+class Medicamentos( ) {
 
     var nome_med: String? = null
     var frequency : Int = 0 // Specified on minutes
     var startingTime : Int = 0 // Specified on minutes 0 = 00:00, 61 = 01:01
 
-
     constructor(nome_med: String?, frequency: Int,startingTime: Int) : this(){
-        this.nome_med = nome_med ?: ""
+        this.nome_med = nome_med
         this.frequency = frequency
         this.startingTime = startingTime
     }
+
     constructor(snap: DataSnapshot) : this(
         snap.child("nome_med").value as String,
         (snap.child("alarm/frequency").value as Long).toInt(),
         (snap.child("alarm/time").value as Long).toInt()
     )
-
-    @JvmName("getNome_med1")
-    /*fun getNome_med(): String? {
-        return if (::nome_med.isInitialized) nome_med else ""
-    }*/
 
     fun bundle(): Bundle {
         val bundle = Bundle()
@@ -48,14 +43,6 @@ class Medicamentos(  ) {
         return bundle
     }
 
-
-
-    fun saveUID(user : FirebaseUser) {
-        val userRef = FirebaseDatabase.getInstance().reference.child("users")
-        val cleanEmail = cleanEmail(user.email!!)
-        userRef.child(cleanEmail).setValue(user.uid)
-    }
-
     // Save medicine to firebase
     fun save() {
         val medRef = getUserDBRef().child("medicamentos/$nome_med")
@@ -63,7 +50,6 @@ class Medicamentos(  ) {
             "alarm/time" to startingTime,
             "alarm/frequency" to frequency
         )
-
         medRef.updateChildren(singleUpdate)
 
         // Saving alarm references
@@ -130,33 +116,6 @@ fun Bundle.unbundledMedicamentos() : Medicamentos {
     )
 }
 
-// Adapter of medList to an ArrayAdapter
-class MedicationAdapter(context: Context, medList: ArrayList<Medicamentos>)
-    : ArrayAdapter<Medicamentos>(context,  R.layout.row_medicamentos, medList) {
 
-    private class ViewHolder {
-        lateinit var nome_med: TextView
-    }
 
-    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val med = getItem(position)!!
-        val holder: ViewHolder
-        val retView: View
-
-        if (convertView == null) {
-            val inflater = LayoutInflater.from(context)
-            retView = inflater.inflate(R.layout.row_medicamentos, parent, false)
-            holder = ViewHolder()
-            holder.nome_med = retView.findViewById(R.id.medTitleTextView)
-            retView.tag = holder
-        } else {
-            retView = convertView
-            holder = retView.tag as ViewHolder
-        }
-
-        holder.nome_med.text = med.nome_med
-        return retView
-    }
-
-}
 

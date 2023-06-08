@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.annotation.RequiresApi
 import android.widget.*
-import androidx.core.view.isEmpty
 import com.example.cuidadosoapp.Model.Medicamentos
 import com.example.cuidadosoapp.databinding.ActivityAddMedicamentoBinding
 import com.google.firebase.analytics.FirebaseAnalytics

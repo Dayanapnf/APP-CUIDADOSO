@@ -8,7 +8,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cuidadosoapp.Model.Medicamentos
 import com.example.cuidadosoapp.Model.unbundledMedicamentos
-import com.example.cuidadosoapp.databinding.ActivityAddMedicamentoBinding
 import com.example.cuidadosoapp.databinding.ActivityMedicationViewBinding
 
 
